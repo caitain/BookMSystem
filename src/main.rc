@@ -1,0 +1,664 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\main.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "res\\Study.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 372, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 main"
+FONT 9, "宋体"
+BEGIN
+    ICON            128,IDC_STATIC,11,17,21,21
+    LTEXT           "图书管管理系统1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,315,7,50,14,WS_GROUP
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 708, 382
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "主界面",IDC_TEXTPLACE,91,57,79,8
+    LTEXT           "超级管理员",IDC_TEXTUSER,533,59,84,8
+    PUSHBUTTON      "关闭",IDC_CANCEL,603,34,51,17
+    PUSHBUTTON      "首页",IDC_INDEX,171,33,51,17
+    PUSHBUTTON      "排行榜",IDC_SORT,231,33,51,17
+    PUSHBUTTON      "用户信息",IDC_USE,415,33,51,17
+    PUSHBUTTON      "最新添加",IDC_NEWSADD,292,33,51,17
+    PUSHBUTTON      "借书",IDC_BORROW_BOOK,541,33,51,17
+    PUSHBUTTON      "还书",IDC_RETURNBOOK,477,33,51,17
+    PUSHBUTTON      "读者信息",IDC_READ,353,33,51,17
+    LTEXT           "查询:",IDC_STATIC,199,58,21,8
+    EDITTEXT        IDC_QUERY_TEXT,293,55,78,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_QUERY_OK,376,55,30,14
+    LTEXT           "当前系统日期:",IDC_STATIC,525,77,53,8
+    EDITTEXT        IDC_TIME,581,75,63,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SELECT_COMB,220,55,68,64,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "管理信息",IDC_DATA,27,97,87,14
+    PUSHBUTTON      "超期读者",IDC_MENEY,27,201,87,14
+    PUSHBUTTON      "查看已借出图书",IDC_LOOK_HAVE,27,117,87,14
+    PUSHBUTTON      "中国知网(网站)",IDC_CHNIA,27,160,87,14
+    COMBOBOX        IDC_CLASS,203,75,55,103,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "文科/理科:",IDC_STATIC,161,77,41,8
+    COMBOBOX        IDC_BOOK_CLASS2,305,76,64,103,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "科目分类:",IDC_STATIC,266,78,37,8
+    PUSHBUTTON      "深度一键设置",IDC_SET,27,223,87,14
+    PUSHBUTTON      "最小化",IDC_MINIBOX,629,0,17,12
+    PUSHBUTTON      "关闭",IDC_CANCELBOX,646,0,22,12
+    PUSHBUTTON      "查看个人所借书籍",IDC_LOOK_HAVE2,27,141,87,14
+    LTEXT           "排序:",IDC_STATIC,378,77,21,8
+    COMBOBOX        IDC_COMBO1,406,75,44,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "升↑",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,455,77,32,
+                    10
+    CONTROL         "降↓",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,487,77,32,
+                    10
+    PUSHBUTTON      "校园内网(网站)",IDC_CHNIA2,27,181,87,14
+END
+
+IDD_LOGO_DIALOG DIALOG DISCARDABLE  0, 0, 283, 176
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "登入",IDC_LOGO,89,130,31,12
+    PUSHBUTTON      "重置",IDC_RESET,139,130,29,12
+    EDITTEXT        IDC_USENAME,89,72,83,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,89,85,83,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHECK,89,100,51,11,ES_AUTOHSCROLL
+    CONTROL         "Radio1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,90,116,8,
+                    8
+    CONTROL         "Radio2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,117,116,
+                    8,8
+    PUSHBUTTON      "关闭",IDC_LCANCEL,225,0,13,9
+    PUSHBUTTON      "最小化",IDC_MIN,212,0,13,9
+    PUSHBUTTON      "注册",IDC_REGISTER,140,116,28,11
+END
+
+IDD_REGISTER_DLG DIALOG DISCARDABLE  0, 0, 259, 199
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读者用户注册1.0"
+FONT 11, "宋体"
+BEGIN
+    EDITTEXT        IDC_MYNAME,64,57,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,64,72,70,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSTWO,64,89,70,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "注册",IDC_REGISTER,28,164,50,14
+    PUSHBUTTON      "重置",IDC_RESET,95,164,50,14
+    PUSHBUTTON      "取消",IDCANCEL,157,165,50,14
+    LTEXT           "借书证号:",IDC_STATIC,25,45,35,8
+    LTEXT           "用户名:",IDC_USENAME,33,59,27,8
+    LTEXT           "密码:",IDC_STATIC,41,75,19,8
+    LTEXT           "重新输入密码:",IDC_STATIC,9,90,51,8
+    LTEXT           "(注:此列表作为测试使用)",IDC_STATIC,141,42,88,8
+    LTEXT           "(*必填字段，格式为任意字符)",IDC_STATIC,141,59,104,8
+    LTEXT           "(*必填字段，格式为任意字符)",IDC_STATIC,141,74,104,8
+    LTEXT           "(*必填字段，格式为任意字符)",IDC_STATIC,141,90,104,8
+    COMBOBOX        IDC_COMBO1,64,42,72,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_BORROW_DLG DIALOG DISCARDABLE  0, 0, 425, 337
+STYLE WS_CHILD
+FONT 10, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "借出",IDOK,50,301,50,14
+    PUSHBUTTON      "取消",IDCANCEL,110,302,50,14
+    LTEXT           "图书ID:",IDC_STATIC,66,36,29,8
+    EDITTEXT        IDC_EDIT1,105,19,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,105,37,82,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATA_READ,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,7,57,411,106
+    CONTROL         "",IDC_DATA_BOOK,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,7,172,411,122
+    LTEXT           "超期天数:",IDC_STATIC,209,36,40,8
+    EDITTEXT        IDC_EDIT3,251,15,33,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "欠费金额:",IDC_STATIC,209,18,39,8
+    EDITTEXT        IDC_EDIT4,251,33,33,15,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "交清欠款",IDC_PAYOFF,306,36,33,12
+    LTEXT           "借书证号:",IDC_STATIC,58,20,37,8
+    LTEXT           "元",IDC_STATIC,285,17,14,10
+    LTEXT           "天",IDC_STATIC,287,35,10,10
+END
+
+IDD_RETURN_DLG DIALOG DISCARDABLE  0, 0, 383, 270
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "归还",IDC_RETURN_BOOK,212,11,50,14
+    PUSHBUTTON      "取消",IDCANCEL,268,11,50,14
+    CONTROL         "",IDC_BOOK_DATA,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,7,33,358,226
+    LTEXT           "图书ID:",IDC_STATIC,84,13,26,8
+    EDITTEXT        IDC_EDIT1,112,11,94,12,ES_AUTOHSCROLL
+END
+
+IDD_DATA DIALOG DISCARDABLE  0, 0, 378, 267
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDC_SAVE,53,245,50,14
+    PUSHBUTTON      "图书基本信息",IDC_BOOK,28,7,49,12
+    PUSHBUTTON      "读者信息",IDC_READ,234,7,49,12
+    PUSHBUTTON      "用户信息",IDC_USE,131,7,49,12
+    CONTROL         "",IDC_DATA_GRID,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,4,40,367,194
+    PUSHBUTTON      "删除",IDC_DELETE,112,246,42,13
+    LTEXT           "精确查询:",IDC_STATIC,91,26,35,8
+    EDITTEXT        IDC_USEID,128,23,64,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_SERCH,204,22,27,13
+END
+
+IDD_SET_DLG DIALOG DISCARDABLE  0, 0, 425, 257
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "全部确定",IDOK,84,216,50,14
+    PUSHBUTTON      "取消",IDCANCEL,168,216,50,14
+    LTEXT           "允许借出最大天数:",IDC_STATIC,35,20,67,8
+    COMBOBOX        IDC_COMBO1,103,19,41,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "天",IDC_STATIC,144,21,9,8
+    LTEXT           "超期罚款金额元/天:",IDC_STATIC,33,34,69,8
+    COMBOBOX        IDC_COMBO2,103,33,40,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "元",IDC_STATIC,144,34,9,8
+    LTEXT           "允许读者最大借书册数:",IDC_STATIC,19,49,83,8
+    COMBOBOX        IDC_COMBO3,103,47,40,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "本",IDC_STATIC,144,48,9,8
+    PUSHBUTTON      "确定",IDC_DAY,160,19,32,11
+    PUSHBUTTON      "确定",IDC_MONEY,160,34,32,11
+    PUSHBUTTON      "确定",IDC_BUTTON3,160,49,32,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "main Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "main\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "main.EXE\0"
+            VALUE "ProductName", "main 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_LOGO_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 276
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_REGISTER_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 256
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_BORROW_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_RETURN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 5
+    END
+
+    IDD_DATA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+    END
+
+    IDD_SET_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CANCEL              BITMAP  DISCARDABLE     "res\\CANCEL1.bmp"
+IDB_CANCEL1             BITMAP  DISCARDABLE     "res\\CANCEL.bmp"
+IDB_INDEX               BITMAP  DISCARDABLE     "res\\Index1.bmp"
+IDB_INDEX1              BITMAP  DISCARDABLE     "res\\Index.bmp"
+IDB_SORT                BITMAP  DISCARDABLE     "res\\sort1.bmp"
+IDB_SORT1               BITMAP  DISCARDABLE     "res\\sort.bmp"
+IDB_USE                 BITMAP  DISCARDABLE     "res\\use1.bmp"
+IDB_USE1                BITMAP  DISCARDABLE     "res\\use.bmp"
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\logn.bmp"
+IDB_LOGO1               BITMAP  DISCARDABLE     "res\\logm.bmp"
+IDB_RESET               BITMAP  DISCARDABLE     "res\\Q1.bmp"
+IDB_RESET1              BITMAP  DISCARDABLE     "res\\Quit1.bmp"
+IDB_LCANCEL             BITMAP  DISCARDABLE     "res\\关闭1.bmp"
+IDB_LCANCEL1            BITMAP  DISCARDABLE     "res\\XX.bmp"
+IDB_LMIN                BITMAP  DISCARDABLE     "res\\最小化一.bmp"
+IDB_LMIN1               BITMAP  DISCARDABLE     "res\\mm.bmp"
+IDB_REGIT               BITMAP  DISCARDABLE     "res\\REGIT1.bmp"
+IDB_REGIT1              BITMAP  DISCARDABLE     "res\\REGIT.bmp"
+IDB_BACKLOGO            BITMAP  DISCARDABLE     "res\\bg123.bmp"
+IDB_REGISTER            BITMAP  DISCARDABLE     "res\\RR.bmp"
+IDB_ADDNEW              BITMAP  DISCARDABLE     "res\\addnew1.bmp"
+IDB_ADDNEW1             BITMAP  DISCARDABLE     "res\\addnew.bmp"
+IDB_BORROW              BITMAP  DISCARDABLE     "res\\borrow1.bmp"
+IDB_BORROW1             BITMAP  DISCARDABLE     "res\\borrow.bmp"
+IDB_QUERY               BITMAP  DISCARDABLE     "res\\query1.bmp"
+IDB_QUERY1              BITMAP  DISCARDABLE     "res\\query.bmp"
+IDB_RETURN              BITMAP  DISCARDABLE     "res\\return1.bmp"
+IDB_RETURN1             BITMAP  DISCARDABLE     "res\\return.bmp"
+IDB_READ                BITMAP  DISCARDABLE     "res\\read1.bmp"
+IDB_READ1               BITMAP  DISCARDABLE     "res\\read.bmp"
+IDB_DLGBACK             BITMAP  DISCARDABLE     "res\\eeee.bmp"
+IDB_BACKGROUND          BITMAP  DISCARDABLE     "res\\mainee.bmp"
+IDB_MCACEL              BITMAP  DISCARDABLE     "res\\canc3.bmp"
+IDB_MCACEL1             BITMAP  DISCARDABLE     "res\\canc2.bmp"
+IDB_MMIN                BITMAP  DISCARDABLE     "res\\canc1.bmp"
+IDB_MMIN1               BITMAP  DISCARDABLE     "res\\canc.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NORMAL              CURSOR  DISCARDABLE     "res\\radix phantasma normal select.cur"
+IDC_HAND                CURSOR  DISCARDABLE     "res\\radix phantasma link select.cur"
+IDC_EDIT                CURSOR  DISCARDABLE     "res\\AquaText Select.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BORROW_DLG DLGINIT
+BEGIN
+    IDC_DATA_READ, 0x37a, 492, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4a50, 0x0000, 0x11c7, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0xff80, 0x00ff, 0x0000, 0x00a0, 0x0000, 0x3f80, 0x0000, 0x4190, 0x0000, 
+0x4282, 0x0101, 0x0002, 0x0001, 0x0101, 0x0001, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 0x7379, 0x6574, 0x036d, 0xe352, 
+0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x000a, 0x0000, 
+0x8bfb, 0x8005, 0x4fe1, 0x606f, 0x8868, 0x0006, 0x0000, 0x0004, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0031, 0x0039, 0x005c, 
+0x0050, 0x0069, 0x0063, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0600, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4254, 0x0000, 0x0000, 0x0002, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x4254, 
+    IDC_DATA_BOOK, 0x37a, 492, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4a50, 0x0000, 0x1477, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0xff80, 0x00ff, 0x0000, 0x00a0, 0x0000, 0x4000, 0x0000, 0x4190, 0x0000, 
+0x4282, 0x0101, 0x0002, 0x0001, 0x0101, 0x0001, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 0x7379, 0x6574, 0x036d, 0xe352, 
+0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x000a, 0x0000, 
+0x56fe, 0x4e66, 0x4fe1, 0x606f, 0x8868, 0x0006, 0x0000, 0x0004, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0600, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0600, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4254, 0x0000, 0x0000, 0x0002, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x4254, 
+    0
+END
+
+IDD_RETURN_DLG DLGINIT
+BEGIN
+    IDC_BOOK_DATA, 0x37a, 496, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4a00, 0x0000, 0x2eb7, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0xff80, 0x00ff, 0x0000, 0x00a0, 0x0000, 0x3f80, 0x0000, 0x4190, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0x0001, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 0x7379, 0x6574, 0x036d, 0xe352, 
+0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0600, 0xc2d0, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x000c, 
+0x0000, 0x56fe, 0x4e66, 0x57fa, 0x672c, 0x4fe1, 0x606f, 0x0006, 0x0000, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 
+0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0031, 
+0x0039, 0x005c, 0x0050, 0x0069, 0x0063, 0x0804, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 
+0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0151, 
+0x0086, 0xbc00, 0xc002, 0x01d4, 0x0600, 0x0804, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4238, 0x0000, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4238, 
+    0
+END
+
+IDD_MAIN_DIALOG DLGINIT
+BEGIN
+    IDC_SELECT_COMB, 0x403, 15, 0
+0xd12d, 0xd4a1, 0xb2f1, 0xd1e9, 0xccaf, 0xbcf5, 0x2dfe, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xb4b0, 0xb1ca, 0xe4bc, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xb4b0, 0xcbc8, 0xf8c6, "\000" 
+    0
+END
+
+IDD_DATA DLGINIT
+BEGIN
+    IDC_DATA_GRID, 0x37a, 486, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x4bdc, 0x0000, 0x281a, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0xff80, 0x00ff, 0x0000, 0x0080, 0x0000, 0x3f80, 0x0000, 0x4190, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x01ff, 0x0000, 0x00ff, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x0190, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xc001, 
+0x01d4, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0006, 0x0000, 0x4fe1, 
+0x606f, 0x8868, 0x0006, 0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 
+0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 
+0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0030, 0x0030, 0x005f, 0x0043, 0x006c, 0x0061, 
+0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 
+0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 
+0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0030, 0x0030, 0x0000, 0x0030, 0x0030, 0x0041, 
+0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x4238, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x4238, 
+
+    0
+END
+
+IDD_SET_DLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3132, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3732, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3333, 0x0030, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3633, 0x0030, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0031, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0032, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0033, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0034, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0036, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0037, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0038, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e30, 0x0039, 
+    IDC_COMBO2, 0x403, 4, 0
+0x2e31, 0x0030, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO3, 0x403, 3, 0
+0x3031, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_NORMAL1             WAVE    DISCARDABLE     "res\\jump.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 main(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\main.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

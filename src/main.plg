@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: main - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Tomorrow\AppData\Local\Temp\RSP2D41.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"../bin/main.pdb" /debug /machine:I386 /out:"../bin/main.exe" /pdbtype:sept 
+.\Debug\BorrowDlg.obj
+.\Debug\column.obj
+.\Debug\columns.obj
+.\Debug\DataDlg.obj
+.\Debug\datagrid.obj
+.\Debug\LogoButton.obj
+.\Debug\LogoDlg.obj
+.\Debug\main.obj
+.\Debug\mainDlg.obj
+.\Debug\MyButton.obj
+.\Debug\MyEdit.obj
+.\Debug\NewButton.obj
+.\Debug\RegisterDlg.obj
+.\Debug\ReturnDlg.obj
+.\Debug\SetDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\main.res
+]
+Creating command line "link.exe @C:\Users\Tomorrow\AppData\Local\Temp\RSP2D41.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\Users\Tomorrow\AppData\Local\Temp\RSP2E8B.tmp" with contents
+[
+/nologo /o"../bin/main.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\BorrowDlg.sbr
+.\Debug\column.sbr
+.\Debug\columns.sbr
+.\Debug\DataDlg.sbr
+.\Debug\datagrid.sbr
+.\Debug\LogoButton.sbr
+.\Debug\LogoDlg.sbr
+.\Debug\main.sbr
+.\Debug\mainDlg.sbr
+.\Debug\MyButton.sbr
+.\Debug\MyEdit.sbr
+.\Debug\NewButton.sbr
+.\Debug\RegisterDlg.sbr
+.\Debug\ReturnDlg.sbr
+.\Debug\SetDlg.sbr]
+Creating command line "bscmake.exe @C:\Users\Tomorrow\AppData\Local\Temp\RSP2E8B.tmp"
+Creating browse info file...
+BSCMAKE: warning BK4502 : truncated .SBR file '.\Debug\BorrowDlg.sbr' not in ../bin/main.bsc
+BSCMAKE: error BK1513 : nonincremental update requires all .SBR files
+Ö´ÐÐ bscmake.exe Ê±³ö´í.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+main.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
